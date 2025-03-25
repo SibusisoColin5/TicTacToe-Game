@@ -1,0 +1,44 @@
+
+.game-square {
+  height: 96%;
+  text-align: center;
+  line-height: 0.85;
+  cursor: pointer;
+}
+
+/*p {*/
+/*  display: inline;*/
+/*  margin: 0px;*/
+/*  font-size: 14rem;*/
+/*  overflow: hidden;*/
+/*}*/
+
+/*.noClick {*/
+/*  pointer-events: none;*/
+/*}*/
+
+
+/*New Style is here */
+
+/*.game-square {*/
+/*  height: 100%; !* Ensure it takes full height *!*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  text-align: center;*/
+/*  line-height: 1; !* Set to normal line height *!*/
+/*  cursor: pointer;*/
+/*  border: 1px solid #000; !* Ensure each square has a border *!*/
+/*}*/
+
+/*.game-square p {*/
+/*  margin: 0;*/
+/*  font-size: 3rem; !* Adjust size to fit within the square *!*/
+/*  overflow: hidden; !* To prevent overflow issues *!*/
+/*}*/
+
+/*.noClick {*/
+/*  pointer-events: none;*/
+/*}*/
+
+

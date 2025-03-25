@@ -1,0 +1,42 @@
+p {
+  font-family: Lato, serif;
+}
+
+h1 {
+
+  transition: color .2s;
+
+}
+h1  {
+  transition: display 4s;
+}
+.header {
+  margin-top: 100px;
+}
+
+.text-red{
+  color: red;
+}
+
+/*.player-input {*/
+/*  display: block;*/
+/*  margin: 10px auto;*/
+/*  padding: 8px;*/
+/*  width: 200px;*/
+/*  border-radius: 4px;*/
+/*  border: 1px solid #ccc;*/
+/*}*/
+
+.player-input {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 200px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+
+
+
+
