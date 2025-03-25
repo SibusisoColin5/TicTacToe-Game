@@ -1,0 +1,82 @@
+<!--<div class="header">-->
+<!--  <h1 class="text-center text-grey-darker" *ngIf="!gameService.isGameRunning">Tic-Tac-Toe</h1>-->
+<!--  <h1 class="text-center" *ngIf="gameService.isGameRunning" [ngClass]="{'text-teal': gameService.activePlayer == 'O', 'text-red': gameService.activePlayer == 'X'}">-->
+<!--    It's {{ activePlayerName }}'s turn-->
+<!--  </h1>-->
+<!--  <h1 class="text-center text-grey-darker" *ngIf="gameService.winner">{{ winnerName }} WON THE GAME</h1>-->
+<!--</div>-->
+
+<!--<app-board></app-board>-->
+
+<!--<button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded mx-auto block mt-5"-->
+<!--        *ngIf="gameService.gameOver"-->
+<!--        (click)="resetGame()">Reset</button>-->
+
+
+
+<!--<div class="header">-->
+<!--  <h1 class="text-center text-grey-darker" *ngIf="!gameService.isGameRunning">Tic-Tac-Toe</h1>-->
+<!--  <h1 class="text-center" *ngIf="gameService.isGameRunning" [ngClass]="{'text-teal': gameService.activePlayer == 'O', 'text-red': gameService.activePlayer == 'X'}">-->
+<!--    It's {{ activePlayerName }}'s turn-->
+<!--  </h1>-->
+<!--  <h1 class="text-center text-grey-darker" *ngIf="gameService.winner">{{ winnerName }} WON THE GAME</h1>-->
+
+<!--  &lt;!&ndash; Input fields for player names &ndash;&gt;-->
+<!--  <div *ngIf="!gameService.isGameRunning">-->
+<!--    <input type="text" placeholder="Player 1 Name" [(ngModel)]="playerNames['X']" class="player-input" />-->
+<!--    <input type="text" placeholder="Player 2 Name" [(ngModel)]="playerNames['O']" class="player-input" />-->
+<!--  </div>-->
+<!--</div>-->
+
+<!--<app-board></app-board>-->
+
+<!--<button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded mx-auto block mt-5"-->
+<!--        *ngIf="gameService.gameOver"-->
+<!--        (click)="resetGame()">Reset</button>-->
+
+
+<!--<div class="header">-->
+<!--  <h1 class="text-center text-grey-darker" *ngIf="!gameService.isGameRunning">Tic-Tac-Toe</h1>-->
+<!--  <h1 class="text-center" *ngIf="gameService.isGameRunning" [ngClass]="{'text-teal': gameService.activePlayer == 'O', 'text-red': gameService.activePlayer == 'X'}">-->
+<!--    It's {{ activePlayerName }}'s turn-->
+<!--  </h1>-->
+<!--  <h1 class="text-center text-grey-darker" *ngIf="gameService.winner">{{ winnerName }} WON THE GAME</h1>-->
+
+<!--  &lt;!&ndash; Input fields for player names &ndash;&gt;-->
+<!--  <div *ngIf="!gameService.isGameRunning">-->
+<!--    <input type="text" placeholder="Enter Player 1 Name" [(ngModel)]="playerNames['X']" class="player-input" />-->
+<!--    <input type="text" placeholder="Enter Player 2 Name" [(ngModel)]="playerNames['O']" class="player-input" />-->
+<!--    <button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded mx-auto block mt-5"-->
+<!--            (click)="startGame()"-->
+<!--            [disabled]="!playerNames['X'] || !playerNames['O']">Start Game</button>-->
+<!--  </div>-->
+<!--</div>-->
+
+<!--<app-board></app-board>-->
+
+<!--<button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded mx-auto block mt-5"-->
+<!--        *ngIf="gameService.gameOver"-->
+<!--        (click)="resetGame()">Reset</button>-->
+
+<div class="header">
+  <h1 class="text-center text-grey-darker" *ngIf="!gameService.isGameRunning">Tic-Tac-Toe</h1>
+  <h1 class="text-center" *ngIf="gameService.isGameRunning" [ngClass]="{'text-teal': gameService.activePlayer == 'O', 'text-red': gameService.activePlayer == 'X'}">
+    It's {{ activePlayerName }}'s turn
+  </h1>
+  <h1 class="text-center text-grey-darker" *ngIf="gameService.winner">{{ winnerName }} WON THE GAME</h1>
+
+  <!-- Input fields for player names and start button -->
+  <div *ngIf="!gameService.isGameRunning">
+    <input type="text" placeholder="Enter Player 1 Name" [(ngModel)]="playerNames['X']" class="player-input" />
+    <input type="text" placeholder="Enter Player 2 Name" [(ngModel)]="playerNames['O']" class="player-input" />
+    <button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded mx-auto block mt-5"
+            (click)="startGame()"
+            [disabled]="!playerNames['X'] || !playerNames['O']">Start Game</button>
+  </div>
+</div>
+
+<app-board></app-board>
+
+<button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded mx-auto block mt-5"
+        *ngIf="gameService.gameOver"
+        (click)="resetGame()">Reset</button>
